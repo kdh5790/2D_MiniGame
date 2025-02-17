@@ -9,8 +9,6 @@ public class RankingUI : BaseUI
     [SerializeField] private List<TextMeshProUGUI> rankingTextList = new List<TextMeshProUGUI>();
     [SerializeField] private List<TextMeshProUGUI> scoreTextList = new List<TextMeshProUGUI>();
 
-    private const int maxRanking = 5;
-
     protected override UIState GetUIState()
     {
         return UIState.Home;
