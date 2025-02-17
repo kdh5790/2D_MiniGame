@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickExit()
     {
-        SceneManager.LoadScene("2_LobbyScene");
+        SceneManager.LoadScene((int)Scene.Lobby);
     }
     
     public void UpdateScore()

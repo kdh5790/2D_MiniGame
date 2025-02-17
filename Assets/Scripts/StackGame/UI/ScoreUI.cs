@@ -35,7 +35,7 @@ public class ScoreUI : BaseUI
         saveScoreBtn = transform.Find("SaveScoreButton").GetComponent<Button>();
 
         startBtn.onClick.AddListener(OnClickStartButton);
-        exitBtn.onClick.AddListener(OnClickExitButton);
+        exitBtn.onClick.AddListener(OnClickRestartButton);
         saveScoreBtn.onClick.AddListener(OnClickSaveScoreButton);
     }
 
@@ -52,9 +52,9 @@ public class ScoreUI : BaseUI
         uiManager.OnClickStart();
     }
 
-    void OnClickExitButton()
+    void OnClickRestartButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene((int)Scene.Stack);
     }
 
     void OnClickSaveScoreButton()

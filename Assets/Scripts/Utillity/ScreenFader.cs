@@ -9,7 +9,8 @@ using UnityEngine.U2D;
 public enum Scene
 {
     Start,
-    Lobby
+    Lobby,
+    Stack
 }
 
 public class ScreenFader : MonoBehaviour

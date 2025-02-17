@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/2_LobbyScene.unity
     guid: 70e7a6d6cbc6ccb4a82ef3be5a360367
   - enabled: 1
-    path: Assets/Scenes/3_FlappyBirdScene.unity
-    guid: 90b8fe221890ded4bb03a90600c90c15
-  - enabled: 1
-    path: Assets/Scenes/4_StackScene.unity
+    path: Assets/Scenes/3_StackScene.unity
     guid: 43bb357a259747e4e9604287d1f2d70a
-  - enabled: 1
-    path: Assets/Scenes/5_ShootingScene.unity
-    guid: a5d7255837d091740938d9132c564fbb
   m_configObjects: {}
