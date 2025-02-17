@@ -6,8 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
 
-
-    private Animator anim;
     private Rigidbody2D rigidBody;
 
     private Vector2 moveVelocity;
@@ -16,7 +14,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -33,12 +30,6 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        // 이동 중이라면 애니메이션 변경
-        if (moveInput.magnitude != 0)
-            anim.SetBool("IsMove", true);
-        else
-            anim.SetBool("IsMove", false);
-
         moveVelocity = moveInput.normalized * moveSpeed; // 이동 속도 구하기
         rigidBody.MovePosition(rigidBody.position + moveVelocity * Time.fixedDeltaTime); // 이동
         moveDirection = moveVelocity.normalized; // 이동중인 방향 구하기
@@ -50,11 +41,11 @@ public class PlayerController : MonoBehaviour
     {
         if(directionX < 0) // 왼쪽으로 이동 중
         {
-            this.gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
+            this.gameObject.transform.localScale = new Vector3(-1, 1, 1);
         }
         else if(directionX > 0) // 오른쪽으로 이동 중
         {
-            this.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+            this.gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }
