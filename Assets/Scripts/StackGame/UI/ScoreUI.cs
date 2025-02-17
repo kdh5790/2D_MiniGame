@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreUI : BaseUI
@@ -53,7 +54,7 @@ public class ScoreUI : BaseUI
 
     void OnClickExitButton()
     {
-        uiManager.OnClickExit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void OnClickSaveScoreButton()

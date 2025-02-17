@@ -17,7 +17,6 @@ public class RankingUI : BaseUI
     public override void Init(UIManager uiManager)
     {
         base.Init(uiManager);
-
     }
 
     public void OnRanikngBoard()
@@ -27,8 +26,6 @@ public class RankingUI : BaseUI
             gameObject.SetActive(true);
 
             List<int> scores = FindObjectOfType<RankingManager>().GetRanking();
-
-            Debug.Log(scores.Count);
 
             int minCount = Mathf.Min(scores.Count, scoreTextList.Count);
 

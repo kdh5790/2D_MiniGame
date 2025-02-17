@@ -75,8 +75,7 @@ public class TheStack : MonoBehaviour
             }
             else
             {
-                // 게임 오버
-                Debug.Log("GameOver");
+                FindObjectOfType<RankingManager>().AddScore();
                 UpdateScore();
                 isGameOver = true;
                 GameOverEffect();
