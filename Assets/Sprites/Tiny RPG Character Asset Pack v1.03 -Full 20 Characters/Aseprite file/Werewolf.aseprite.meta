@@ -1,0 +1,1371 @@
+fileFormatVersion: 2
+guid: 5b033bd76eff48f429688d8e217ed4fe
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Werewolf_Frame_0
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 90
+      width: 27
+      height: 19
+    spriteID: a86a442e9c76bf346a28eeb8180d4404
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 90}
+  - name: Werewolf_Frame_1
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 90
+      width: 27
+      height: 19
+    spriteID: 3a3bee2822f148042b767c9a6450f04d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 90}
+  - name: Werewolf_Frame_2
+    originalName: 
+    pivot: {x: 0.26923072, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 230
+      width: 26
+      height: 20
+    spriteID: 412e077e47e27a444acfe91ae43148d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 230}
+  - name: Werewolf_Frame_3
+    originalName: 
+    pivot: {x: 0.26923072, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 62
+      width: 26
+      height: 20
+    spriteID: f613dd2ad3835864ea2ca4aa01b93ce2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 62}
+  - name: Werewolf_Frame_4
+    originalName: 
+    pivot: {x: 0.26923072, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 118
+      width: 26
+      height: 18
+    spriteID: c1627c5ed2e720b48aff4d3a7739f703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 118}
+  - name: Werewolf_Frame_5
+    originalName: 
+    pivot: {x: 0.26923072, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 145
+      width: 26
+      height: 18
+    spriteID: d5dc3f1e0ac30fd4cba13c97a7a4cb3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 145}
+  - name: Werewolf_Frame_14
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 90
+      width: 27
+      height: 19
+    spriteID: 199fdbe78cbebe14d9cbc58f6ba89f7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 90}
+  - name: Werewolf_Frame_15
+    originalName: 
+    pivot: {x: 0.26923072, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 62
+      width: 26
+      height: 20
+    spriteID: f4ce7049f8e5cdc47ac47a669e275b6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 62}
+  - name: Werewolf_Frame_16
+    originalName: 
+    pivot: {x: 0.26923072, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 62
+      width: 26
+      height: 20
+    spriteID: 483899bb44ac93a45b691cc829860902
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 114, y: 62}
+  - name: Werewolf_Frame_17
+    originalName: 
+    pivot: {x: 0.4666666, y: -1.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 199
+      width: 15
+      height: 28
+    spriteID: 65e30d31fa2b5b2489357b433657e0dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 199}
+  - name: Werewolf_Frame_18
+    originalName: 
+    pivot: {x: 0.4666666, y: -1.4814814}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 199
+      width: 15
+      height: 27
+    spriteID: 254b5ac2e342abf45bd8881edf145c9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 199}
+  - name: Werewolf_Frame_19
+    originalName: 
+    pivot: {x: 0.20588233, y: -1.4814814}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 49
+      width: 34
+      height: 27
+    spriteID: ca3a20dffb878a041967495b9aae6dc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 49}
+  - name: Werewolf_Frame_20
+    originalName: 
+    pivot: {x: 0.20588233, y: -1.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 4
+      width: 34
+      height: 25
+    spriteID: 828ab9507ddc2a34cb9b86bc9c8e4138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 4}
+  - name: Werewolf_Frame_21
+    originalName: 
+    pivot: {x: 0.24137928, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 118
+      width: 29
+      height: 17
+    spriteID: a626a3a23a1569a41b5a574144634c4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 118}
+  - name: Werewolf_Frame_22
+    originalName: 
+    pivot: {x: 0.26923072, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 145
+      width: 26
+      height: 18
+    spriteID: 885637d66d79f984d88d720361334f86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 145}
+  - name: Werewolf_Frame_23
+    originalName: 
+    pivot: {x: 0.625, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 171
+      width: 24
+      height: 19
+    spriteID: 2f14ac682fab368409f6069f68d9d875
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 171}
+  - name: Werewolf_Frame_24
+    originalName: 
+    pivot: {x: 0.625, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 171
+      width: 24
+      height: 20
+    spriteID: a43867cc52903444b89bed46d52dadb5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 171}
+  - name: Werewolf_Frame_25
+    originalName: 
+    pivot: {x: 0.625, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 171
+      width: 24
+      height: 18
+    spriteID: f9d3a5f2a1e42fc4b8ac776cc7403bed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 171}
+  - name: Werewolf_Frame_26
+    originalName: 
+    pivot: {x: 0.52631575, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 171
+      width: 19
+      height: 18
+    spriteID: 35c4e785cd3140d41b7b9ca8ea387e0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 171}
+  - name: Werewolf_Frame_27
+    originalName: 
+    pivot: {x: 0.2333333, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 118
+      width: 30
+      height: 17
+    spriteID: f51b0e9c279acd141bc43fd8b720a30f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 118}
+  - name: Werewolf_Frame_28
+    originalName: 
+    pivot: {x: 0.32432434, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 37
+      width: 37
+      height: 17
+    spriteID: 86bd241514ac02e46917304d08ca0be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 37}
+  - name: Werewolf_Frame_30
+    originalName: 
+    pivot: {x: 0.20588233, y: -0.945946}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 37
+    spriteID: 5519411b7f42de44c94bbdb97ba3d8c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Werewolf_Frame_31
+    originalName: 
+    pivot: {x: 0.15909089, y: -1.590909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 4
+      width: 44
+      height: 22
+    spriteID: 9778751b6cb133c4abfc56cf49483348
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 4}
+  - name: Werewolf_Frame_32
+    originalName: 
+    pivot: {x: 0.15909089, y: -1.48}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 44
+      height: 25
+    spriteID: 56297aa96f6788a4890f6dc9f534845d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: Werewolf_Frame_33
+    originalName: 
+    pivot: {x: 0.21874997, y: -1.3214285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 32
+      height: 28
+    spriteID: f070fb0d18ed0a44ba342540561208e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: Werewolf_Frame_34
+    originalName: 
+    pivot: {x: 0.15909089, y: -1.6956521}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 4
+      width: 44
+      height: 23
+    spriteID: 19a42de57609fef4eb45cf6e8387a555
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 4}
+  - name: Werewolf_Frame_35
+    originalName: 
+    pivot: {x: 0.22580643, y: -2.3529413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 205
+      width: 31
+      height: 17
+    spriteID: 508f5e07670204544b6cb4610bde5565
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 205}
+  - name: Werewolf_Frame_36
+    originalName: 
+    pivot: {x: 0.30769235, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 62
+      width: 26
+      height: 20
+    spriteID: 6b9e45fa7070fdf4c85d6feb38884340
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 62}
+  - name: Werewolf_Frame_37
+    originalName: 
+    pivot: {x: 0.30769235, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 62
+      width: 26
+      height: 20
+    spriteID: b470a8f730d39fe44bd8841eee766a16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 62}
+  - name: Werewolf_Frame_38
+    originalName: 
+    pivot: {x: 0.30769235, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 62
+      width: 26
+      height: 20
+    spriteID: 28828dc3bb8d79240a8253d427e6b280
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 216, y: 62}
+  - name: Werewolf_Frame_39
+    originalName: 
+    pivot: {x: 0.30769235, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 90
+      width: 26
+      height: 20
+    spriteID: 8fdfe880c965fd64599c5994c6a865a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 90}
+  - name: Werewolf_Frame_40
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 90
+      width: 27
+      height: 19
+    spriteID: a940902efc5a1b546a2839167d6234e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 90}
+  - name: Werewolf_Frame_41
+    originalName: 
+    pivot: {x: 0.3928572, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 28
+      height: 22
+    spriteID: c947f871fefec844582619da9f975461
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: Werewolf_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 150
+      width: 32
+      height: 19
+    spriteID: 4ba73b8e2605e4b478c78ec9f109dcdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 150}
+  - name: Werewolf_Frame_43
+    originalName: 
+    pivot: {x: 0.5294118, y: -3.0769231}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 145
+      width: 34
+      height: 13
+    spriteID: 955017d5584234044b0c54e17f63c78b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 217, y: 145}
+  - name: Werewolf_Frame_6
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 90
+      width: 27
+      height: 19
+    spriteID: 70da14534ea398649b90ed286b8bc71a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 90}
+  - name: Werewolf_Frame_7
+    originalName: 
+    pivot: {x: 0.29629633, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 177
+      width: 27
+      height: 20
+    spriteID: ebd0d3a66d0f27f4fab9e587f90073bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 177}
+  - name: Werewolf_Frame_8
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 118
+      width: 27
+      height: 19
+    spriteID: cd470cf0217eabb459724835d225349e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 118}
+  - name: Werewolf_Frame_9
+    originalName: 
+    pivot: {x: 0.26923072, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 145
+      width: 26
+      height: 18
+    spriteID: cba57ca5165750b4baf7f8f9cba8545b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 145}
+  - name: Werewolf_Frame_10
+    originalName: 
+    pivot: {x: 0.26923072, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 145
+      width: 26
+      height: 18
+    spriteID: 6b2f4e54788ed30498854683f05c8842
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 145}
+  - name: Werewolf_Frame_11
+    originalName: 
+    pivot: {x: 0.25925922, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 118
+      width: 27
+      height: 19
+    spriteID: d16915cfd6be80143a38ebe069b34c39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 118}
+  - name: Werewolf_Frame_12
+    originalName: 
+    pivot: {x: 0.25925922, y: -2.1052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 118
+      width: 27
+      height: 19
+    spriteID: 487c7f8fd7611e74d9a7d272a49cb608
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 118}
+  - name: Werewolf_Frame_13
+    originalName: 
+    pivot: {x: 0.29629633, y: -2.222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 145
+      width: 27
+      height: 18
+    spriteID: 4a032add6d0cb754aa62368e34e0aebd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 145}
+  - name: Werewolf_Frame_29
+    originalName: 
+    pivot: {x: 1.2307692, y: -4.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 235
+      width: 13
+      height: 10
+    spriteID: bf13eef4caf01894b803c0a4c3d500ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 235}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1279150005
+    name: Werewolf
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Werewolf_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: a86a442e9c76bf346a28eeb8180d4404
+    - name: Werewolf_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: 3a3bee2822f148042b767c9a6450f04d
+    - name: Werewolf_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 20
+      spriteId: 412e077e47e27a444acfe91ae43148d9
+    - name: Werewolf_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 20
+      spriteId: f613dd2ad3835864ea2ca4aa01b93ce2
+    - name: Werewolf_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 18
+      spriteId: c1627c5ed2e720b48aff4d3a7739f703
+    - name: Werewolf_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 18
+      spriteId: d5dc3f1e0ac30fd4cba13c97a7a4cb3e
+    - name: Werewolf_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: 199fdbe78cbebe14d9cbc58f6ba89f7a
+    - name: Werewolf_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 20
+      spriteId: f4ce7049f8e5cdc47ac47a669e275b6a
+    - name: Werewolf_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 20
+      spriteId: 483899bb44ac93a45b691cc829860902
+    - name: Werewolf_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 43
+        y: 40
+        width: 15
+        height: 28
+      spriteId: 65e30d31fa2b5b2489357b433657e0dd
+    - name: Werewolf_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 43
+        y: 40
+        width: 15
+        height: 27
+      spriteId: 254b5ac2e342abf45bd8881edf145c9f
+    - name: Werewolf_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 43
+        y: 40
+        width: 34
+        height: 27
+      spriteId: ca3a20dffb878a041967495b9aae6dc3
+    - name: Werewolf_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 43
+        y: 40
+        width: 34
+        height: 25
+      spriteId: 828ab9507ddc2a34cb9b86bc9c8e4138
+    - name: Werewolf_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 17
+      spriteId: a626a3a23a1569a41b5a574144634c4d
+    - name: Werewolf_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 18
+      spriteId: 885637d66d79f984d88d720361334f86
+    - name: Werewolf_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 35
+        y: 40
+        width: 24
+        height: 19
+      spriteId: 2f14ac682fab368409f6069f68d9d875
+    - name: Werewolf_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 35
+        y: 40
+        width: 24
+        height: 20
+      spriteId: a43867cc52903444b89bed46d52dadb5
+    - name: Werewolf_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 35
+        y: 40
+        width: 24
+        height: 18
+      spriteId: f9d3a5f2a1e42fc4b8ac776cc7403bed
+    - name: Werewolf_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 40
+        y: 40
+        width: 19
+        height: 18
+      spriteId: 35c4e785cd3140d41b7b9ca8ea387e0e
+    - name: Werewolf_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 43
+        y: 40
+        width: 30
+        height: 17
+      spriteId: f51b0e9c279acd141bc43fd8b720a30f
+    - name: Werewolf_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 38
+        y: 40
+        width: 37
+        height: 17
+      spriteId: 86bd241514ac02e46917304d08ca0be6
+    - name: Werewolf_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 43
+        y: 35
+        width: 34
+        height: 37
+      spriteId: 5519411b7f42de44c94bbdb97ba3d8c5
+    - name: Werewolf_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 43
+        y: 35
+        width: 44
+        height: 22
+      spriteId: 9778751b6cb133c4abfc56cf49483348
+    - name: Werewolf_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 43
+        y: 37
+        width: 44
+        height: 25
+      spriteId: 56297aa96f6788a4890f6dc9f534845d
+    - name: Werewolf_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 43
+        y: 37
+        width: 32
+        height: 28
+      spriteId: f070fb0d18ed0a44ba342540561208e9
+    - name: Werewolf_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 43
+        y: 39
+        width: 44
+        height: 23
+      spriteId: 19a42de57609fef4eb45cf6e8387a555
+    - name: Werewolf_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 43
+        y: 40
+        width: 31
+        height: 17
+      spriteId: 508f5e07670204544b6cb4610bde5565
+    - name: Werewolf_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 20
+      spriteId: 6b9e45fa7070fdf4c85d6feb38884340
+    - name: Werewolf_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 20
+      spriteId: b470a8f730d39fe44bd8841eee766a16
+    - name: Werewolf_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 20
+      spriteId: 28828dc3bb8d79240a8253d427e6b280
+    - name: Werewolf_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 42
+        y: 40
+        width: 26
+        height: 20
+      spriteId: 8fdfe880c965fd64599c5994c6a865a4
+    - name: Werewolf_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: a940902efc5a1b546a2839167d6234e2
+    - name: Werewolf_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 39
+        y: 40
+        width: 28
+        height: 22
+      spriteId: c947f871fefec844582619da9f975461
+    - name: Werewolf_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 34
+        y: 40
+        width: 32
+        height: 19
+      spriteId: 4ba73b8e2605e4b478c78ec9f109dcdc
+    - name: Werewolf_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 32
+        y: 40
+        width: 34
+        height: 13
+      spriteId: 955017d5584234044b0c54e17f63c78b
+    - name: Werewolf_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: 70da14534ea398649b90ed286b8bc71a
+    - name: Werewolf_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 20
+      spriteId: ebd0d3a66d0f27f4fab9e587f90073bb
+    - name: Werewolf_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 19
+      spriteId: cd470cf0217eabb459724835d225349e
+    - name: Werewolf_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 18
+      spriteId: cba57ca5165750b4baf7f8f9cba8545b
+    - name: Werewolf_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 43
+        y: 40
+        width: 26
+        height: 18
+      spriteId: 6b2f4e54788ed30498854683f05c8842
+    - name: Werewolf_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 43
+        y: 40
+        width: 27
+        height: 19
+      spriteId: d16915cfd6be80143a38ebe069b34c39
+    - name: Werewolf_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 43
+        y: 40
+        width: 27
+        height: 19
+      spriteId: 487c7f8fd7611e74d9a7d272a49cb608
+    - name: Werewolf_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 42
+        y: 40
+        width: 27
+        height: 18
+      spriteId: 4a032add6d0cb754aa62368e34e0aebd
+    - name: Werewolf_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 34
+        y: 45
+        width: 13
+        height: 10
+      spriteId: bf13eef4caf01894b803c0a4c3d500ec
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}
