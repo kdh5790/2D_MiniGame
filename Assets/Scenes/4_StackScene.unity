@@ -8210,13 +8210,14 @@ GameObject:
   - component: {fileID: 1322388554}
   - component: {fileID: 1322388556}
   - component: {fileID: 1322388555}
+  - component: {fileID: 1322388557}
   m_Layer: 5
   m_Name: RankingUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322388554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8277,6 +8278,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322388553}
   m_CullTransparentMesh: 1
+--- !u!114 &1322388557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322388553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290aacb0933a54d40836ed958a7273db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rankingTextList:
+  - {fileID: 1724636102}
+  - {fileID: 1784269323}
+  - {fileID: 439771243}
+  - {fileID: 590968746}
+  - {fileID: 2039390726}
+  scoreTextList:
+  - {fileID: 1754385263}
+  - {fileID: 1688530341}
+  - {fileID: 940036854}
+  - {fileID: 1396233643}
+  - {fileID: 308530011}
 --- !u!1 &1385806518
 GameObject:
   m_ObjectHideFlags: 0
