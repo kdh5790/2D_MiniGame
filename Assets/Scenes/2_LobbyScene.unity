@@ -3273,6 +3273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707b023a2cdc00d4882f342b212e61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  dialogueUI: {fileID: 195306669}
 --- !u!1 &859483793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4307,6 +4309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8a35e8d7ff074459974179ba381a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
 --- !u!1 &1162079611
 GameObject:
   m_ObjectHideFlags: 0

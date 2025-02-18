@@ -15,4 +15,14 @@ public class ShopNPC : NPC
             shopUI.OpenShopUI();
         }
     }
+
+    public override void OnTriggerExit2D(Collider2D collision)
+    {
+        base.OnTriggerExit2D(collision);
+
+        if (collision.CompareTag("Player"))
+        {
+            shopUI.CloseShopUI();
+        }
+    }
 }
