@@ -16,7 +16,6 @@ public class ShopSlot : MonoBehaviour
     [SerializeField] private CharacterScriptableObject characterInfo;
 
     Character slotCharacter;
-    ShopSlotState currentState;
 
     Image characterImage;
 
@@ -70,7 +69,6 @@ public class ShopSlot : MonoBehaviour
                 buyOrEquipButton.image.color = new Color(0, 0.7f, 1f, 1f);
                 buyOrEquipButton.onClick.RemoveAllListeners();
                 buyOrEquipButton.onClick.AddListener(Equip);
-                currentState = ShopSlotState.Equip;
                 break;
 
             case ShopSlotState.Buy:
@@ -78,7 +76,6 @@ public class ShopSlot : MonoBehaviour
                 buyOrEquipButton.image.color = new Color(0, 1f, 0f, 1f);
                 buyOrEquipButton.onClick.RemoveAllListeners();
                 buyOrEquipButton.onClick.AddListener(Buy);
-                currentState = ShopSlotState.Buy;
                 break;
         }
     }
@@ -113,6 +110,7 @@ public class ShopSlot : MonoBehaviour
 
     private void Equip()
     {
-        FindAnyObjectByType<ChangeCharacter>().SpriteChange(slotCharacter);
+        if (slotCharacter != PlayerDataManager.instance.currentCharacter)
+            FindAnyObjectByType<ChangeCharacter>().SpriteChange(slotCharacter);
     }
 }
