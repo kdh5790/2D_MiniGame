@@ -5,12 +5,15 @@ using UnityEngine;
 public class ShopNPC : MonoBehaviour
 {
     private bool isActive = false;
+    private ShopUI shopUI;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isActive)
+        shopUI = FindObjectOfType<ShopUI>(true);
+
+        if (Input.GetKeyDown(KeyCode.Space) && isActive)
         {
-            FindObjectOfType<ShopUI>(true).OpenShopUI();
+            shopUI.OpenShopUI();
         }
     }
 
@@ -27,6 +30,11 @@ public class ShopNPC : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             isActive = false;
+
+            if(shopUI.gameObject.activeSelf)
+            {
+                shopUI.CloseShopUI();
+            }
         }
     }
 }
