@@ -37,6 +37,12 @@ public class ChangeCharacter : MonoBehaviour
         if (player == null)
         { Debug.Log("PlayerController를 찾을 수 없습니다."); return; }
 
+        if (!PlayerDataManager.instance.unlockCharacters.Contains(type))
+        {
+            Debug.Log("현재 캐릭터를 보유하고 있지 않습니다.");
+            return;
+        }
+
         Animator playerAnim = player.GetComponentInChildren<Animator>();
 
         playerAnim.runtimeAnimatorController = charactersAnimator[(int)type].runtimeAnimatorController;
