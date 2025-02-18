@@ -15,18 +15,23 @@ public class ChangeCharacter : MonoBehaviour
     [SerializeField] private Animator[] charactersAnimator;
 
     public Character characterType = Character.Knight;
+    public Character returnCharacter;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            if(characterType == Character.Lancer)
+            {
+                SpriteChange(returnCharacter);
+                return;
+            }
             SpriteChange(Character.Lancer);
         }
     }
 
     public void SpriteChange(Character type)
     {
-
         PlayerController player = FindObjectOfType<PlayerController>();
 
         if (player == null)
@@ -37,7 +42,10 @@ public class ChangeCharacter : MonoBehaviour
         playerAnim.runtimeAnimatorController = charactersAnimator[(int)type].runtimeAnimatorController;
 
         if (type == Character.Lancer)
+        {
+            returnCharacter = characterType;
             player.moveSpeed = 5f;
+        }
         else
             player.moveSpeed = 3f;
 
