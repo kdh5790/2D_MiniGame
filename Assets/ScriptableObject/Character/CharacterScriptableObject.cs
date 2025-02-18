@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharacterScriptableObject", menuName = "Scriptable Object/CharacterScriptableObject", order = int.MaxValue)]
 public class CharacterScriptableObject : ScriptableObject
 {
+    public Character character;
     public Sprite sprite;
     public Vector2 scale;
     public int price;

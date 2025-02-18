@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2e49d7c84412d489e2e2e20beca83d, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
+  characterName: Knight
   sprite: {fileID: 3156912060881515782, guid: a651f7f3753e6b84ea8a5316ddc767ac, type: 3}
   scale: {x: 1.3, y: 1.3}
   price: 0
