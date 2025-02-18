@@ -49,6 +49,8 @@ public class ChangeCharacter : MonoBehaviour
         else
             player.moveSpeed = 3f;
 
+        FindObjectOfType<PlayerInfoUI>().ChangeCharacterFrameImage(type);
+
         characterType = type;
     }
 }
