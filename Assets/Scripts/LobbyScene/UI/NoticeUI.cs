@@ -19,7 +19,7 @@ public class NoticeUI : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        noticeText = null;
+        noticeText.text = string.Empty;
         gameObject.SetActive(false);
     }
 
