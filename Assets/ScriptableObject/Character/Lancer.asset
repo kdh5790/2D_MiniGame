@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2e49d7c84412d489e2e2e20beca83d, type: 3}
+  m_Name: Lancer
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 4858327818502389860, guid: db7c691ef3cb29246bb29b64cfe2b75d, type: 3}
+  scale: {x: 1, y: 1}
+  price: 1500

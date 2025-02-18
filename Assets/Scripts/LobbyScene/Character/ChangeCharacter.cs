@@ -14,14 +14,14 @@ public class ChangeCharacter : MonoBehaviour
 {
     [SerializeField] private Animator[] charactersAnimator;
 
-    public Character characterType = Character.Knight;
+    public Character currentCharacter = Character.Knight;
     public Character returnCharacter;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(characterType == Character.Lancer)
+            if(currentCharacter == Character.Lancer)
             {
                 SpriteChange(returnCharacter);
                 return;
@@ -49,7 +49,7 @@ public class ChangeCharacter : MonoBehaviour
 
         if (type == Character.Lancer)
         {
-            returnCharacter = characterType;
+            returnCharacter = currentCharacter;
             player.moveSpeed = 5f;
         }
         else
@@ -57,6 +57,7 @@ public class ChangeCharacter : MonoBehaviour
 
         FindObjectOfType<PlayerInfoUI>().ChangeCharacterFrameImage(type);
 
-        characterType = type;
+        currentCharacter = type;
+        PlayerDataManager.instance.currentCharacter = currentCharacter;
     }
 }

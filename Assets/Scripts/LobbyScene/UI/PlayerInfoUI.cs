@@ -4,20 +4,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class SpriteInfoWrapper
-{
-    public Sprite sprite;
-    public Vector2 scale;
-}
-
 public class PlayerInfoUI : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> sprites;
     TextMeshProUGUI goldText;
     Image characterFrameImage;
 
-    public List<SpriteInfoWrapper> wrappers;
+    public List<CharacterScriptableObject> charactersInfo;
 
     private void Start()
     {
@@ -35,8 +27,8 @@ public class PlayerInfoUI : MonoBehaviour
 
     public void ChangeCharacterFrameImage(Character currentCharacter)
     {
-        characterFrameImage.sprite = wrappers[(int)currentCharacter].sprite;
-        characterFrameImage.gameObject.transform.localScale = wrappers[(int)currentCharacter].scale;
+        characterFrameImage.sprite = charactersInfo[(int)currentCharacter].sprite;
+        characterFrameImage.gameObject.transform.localScale = charactersInfo[(int)currentCharacter].scale;
         characterFrameImage.SetNativeSize();
     }
 }
