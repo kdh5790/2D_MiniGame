@@ -6,8 +6,8 @@ public class GoldManager : MonoBehaviour
 {
     public static GoldManager instance;
 
-    public int PlayerGold { get; set; }
-    public int MiniGameGold { get; set; }
+    public int PlayerGold;
+    public int MiniGameGold;
 
     private void Awake()
     {

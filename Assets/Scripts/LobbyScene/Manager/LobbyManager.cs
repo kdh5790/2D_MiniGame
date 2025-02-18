@@ -13,7 +13,7 @@ public class LobbyManager : MonoBehaviour
         if (GoldManager.instance.MiniGameGold != 0)
         {
             string text = $"πÃ¥œ∞‘¿” ¡ﬂ »πµÊ«— ¡°ºˆ ∏∏≈≠\r\n∞ÒµÂ∏¶ »πµÊ«ﬂΩ¿¥œ¥Ÿ.\r\n\r\n»πµÊ«— ∞ÒµÂ : {GoldManager.instance.MiniGameGold}G\r\n";
-            StartCoroutine(notice.OnNoticeText(text, 2f));
+            notice.OnNoticeText(text, 2f);
 
             GoldManager.instance.AddPlayerGold();
             GoldManager.instance.InitializeMiniGameGold();

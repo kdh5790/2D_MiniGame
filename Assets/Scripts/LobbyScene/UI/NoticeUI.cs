@@ -13,14 +13,20 @@ public class NoticeUI : MonoBehaviour
         noticeText = GetComponentInChildren<TextMeshProUGUI>(true);
     }
 
-    public IEnumerator OnNoticeText(string text, float time)
+    public IEnumerator OnNoticeTextCoroutine(string text, float time)
     {
-        gameObject.SetActive(true);
         noticeText.text = text;
 
         yield return new WaitForSeconds(time);
 
         noticeText = null;
         gameObject.SetActive(false);
+    }
+
+    public void OnNoticeText(string text, float time)
+    {
+        StopAllCoroutines();
+        gameObject.SetActive(true);
+        StartCoroutine(OnNoticeTextCoroutine(text, time));
     }
 }
