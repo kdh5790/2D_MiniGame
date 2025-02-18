@@ -9307,13 +9307,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1386169496}
   - component: {fileID: 1386169497}
+  - component: {fileID: 1386169498}
   m_Layer: 5
   m_Name: ShopUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1386169496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9353,6 +9354,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1b63a00eb45ee4c8690df22cda4706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1386169498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386169495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd23bf91affe5f41a5d9836df7f7e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1397175346
 GameObject:
   m_ObjectHideFlags: 0
