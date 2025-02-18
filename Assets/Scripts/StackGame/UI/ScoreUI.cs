@@ -45,6 +45,8 @@ public class ScoreUI : BaseUI
         comboText.text = combo.ToString();
         bestScoreText.text = bestScore.ToString();
         bestComboText.text = bestCombo.ToString();
+
+        GoldManager.instance.AddMiniGameGold(score);
     }
 
     void OnClickStartButton()
