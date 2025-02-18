@@ -25,6 +25,7 @@ public class ShopSlot : MonoBehaviour
     TextMeshProUGUI buyOrEquipText;
 
     PlayerInfoUI playerInfoUI;
+    ShopUI shopUI;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class ShopSlot : MonoBehaviour
         buyOrEquipText = buyOrEquipButton.GetComponentInChildren<TextMeshProUGUI>();
 
         playerInfoUI = FindObjectOfType<PlayerInfoUI>();
-
+        shopUI = FindObjectOfType<ShopUI>();
         SetSlot();
     }
 
@@ -111,6 +112,9 @@ public class ShopSlot : MonoBehaviour
     private void Equip()
     {
         if (slotCharacter != PlayerDataManager.instance.currentCharacter)
+        {
             FindAnyObjectByType<ChangeCharacter>().SpriteChange(slotCharacter);
+            shopUI.ChangeSprite();
+        }
     }
 }

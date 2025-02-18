@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class PlayerInfoUI : MonoBehaviour
 {
     TextMeshProUGUI goldText;
-    Image characterFrameImage;
 
+    public Image characterFrameImage;
     public List<CharacterScriptableObject> charactersInfo;
 
     private void Start()
