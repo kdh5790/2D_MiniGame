@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GameUI : BaseUI
+public class StackGameUI : StackBaseUI
 {
     TextMeshProUGUI scoreText;
     TextMeshProUGUI comboText;
@@ -14,7 +14,7 @@ public class GameUI : BaseUI
         return UIState.Game;
     }
 
-    public override void Init(UIManager uiManager)
+    public override void Init(StackUIManager uiManager)
     {
         base.Init(uiManager);
 

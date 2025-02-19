@@ -10,7 +10,7 @@ public class ScoreList
     public List<string> scores = new List<string>();
 }
 
-public class RankingManager : MonoBehaviour
+public class StackRankingManager : MonoBehaviour
 {
     private const string StackRankingKey = "StackRanking";
     private const int maxRanking = 5;

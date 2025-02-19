@@ -75,11 +75,11 @@ public class TheStack : MonoBehaviour
             }
             else
             {
-                FindObjectOfType<RankingManager>().AddScore();
+                FindObjectOfType<StackRankingManager>().AddScore();
                 UpdateScore();
                 isGameOver = true;
                 GameOverEffect();
-                UIManager.Instance.SetScoreUI();
+                StackUIManager.Instance.SetScoreUI();
             }
         }
 
@@ -120,7 +120,7 @@ public class TheStack : MonoBehaviour
         lastBlock = newTrans;
 
         isMovingX = !isMovingX;
-        UIManager.Instance.UpdateScore();
+        StackUIManager.Instance.UpdateScore();
         return true;
     }
 

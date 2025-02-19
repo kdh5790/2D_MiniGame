@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collider : MonoBehaviour
+public class StartSceneCollider : MonoBehaviour
 {
     private readonly float fixedValue = 17.856f; // 백그라운드 오브젝트 간의 거리
 
@@ -14,7 +14,7 @@ public class Collider : MonoBehaviour
         if (collision.gameObject.CompareTag("BackGround"))
         {
             // 부모 오브젝트에서 Background 클래스 가져오기
-            Background parent = collision.gameObject.GetComponentInParent<Background>();
+            StartSceneBackground parent = collision.gameObject.GetComponentInParent<StartSceneBackground>();
 
             if (parent == null) { Debug.Log("Background를 찾지 못했습니다."); return; }
 

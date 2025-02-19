@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RankingUI : BaseUI
+public class StackRankingUI : StackBaseUI
 {
     [SerializeField] private List<TextMeshProUGUI> rankingTextList = new List<TextMeshProUGUI>();
     [SerializeField] private List<TextMeshProUGUI> scoreTextList = new List<TextMeshProUGUI>();
@@ -14,7 +14,7 @@ public class RankingUI : BaseUI
         return UIState.Home;
     }
 
-    public override void Init(UIManager uiManager)
+    public override void Init(StackUIManager uiManager)
     {
         base.Init(uiManager);
     }
@@ -25,7 +25,7 @@ public class RankingUI : BaseUI
         {
             gameObject.SetActive(true);
 
-            List<int> scores = FindObjectOfType<RankingManager>().GetRanking();
+            List<int> scores = FindObjectOfType<StackRankingManager>().GetRanking();
 
             int minCount = Mathf.Min(scores.Count, scoreTextList.Count);
 

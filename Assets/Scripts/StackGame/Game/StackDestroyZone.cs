@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyZone : MonoBehaviour
+public class StackDestroyZone : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {

@@ -11,16 +11,16 @@ public enum UIState
     Score
 }
 
-public class UIManager : MonoBehaviour
+public class StackUIManager : MonoBehaviour
 {
-    static UIManager instance;
+    static StackUIManager instance;
 
-    public static UIManager Instance { get { return instance; } }
+    public static StackUIManager Instance { get { return instance; } }
 
     UIState currentState = UIState.Home;
-    HomeUI homeUI = null;
-    GameUI gameUI = null;
-    ScoreUI scoreUI = null;
+    StackHomeUI homeUI = null;
+    StackGameUI gameUI = null;
+    StackScoreUI scoreUI = null;
 
     TheStack theStack = null;
 
@@ -29,13 +29,13 @@ public class UIManager : MonoBehaviour
         instance = this;
         theStack = FindObjectOfType<TheStack>();
 
-        homeUI = GetComponentInChildren<HomeUI>(true);
+        homeUI = GetComponentInChildren<StackHomeUI>(true);
         homeUI?.Init(this);
 
-        gameUI = GetComponentInChildren<GameUI>(true);
+        gameUI = GetComponentInChildren<StackGameUI>(true);
         gameUI?.Init(this);
 
-        scoreUI = GetComponentInChildren<ScoreUI>(true);
+        scoreUI = GetComponentInChildren<StackScoreUI>(true);
         scoreUI?.Init(this);
 
         ChangeState(UIState.Home);

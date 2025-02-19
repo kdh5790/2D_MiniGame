@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ScoreUI : BaseUI
+public class StackScoreUI : StackBaseUI
 {
     TextMeshProUGUI scoreText;
     TextMeshProUGUI comboText;
@@ -21,7 +21,7 @@ public class ScoreUI : BaseUI
         return UIState.Score;
     }
 
-    public override void Init(UIManager uiManager)
+    public override void Init(StackUIManager uiManager)
     {
         base.Init(uiManager);
 
@@ -61,6 +61,6 @@ public class ScoreUI : BaseUI
 
     void OnClickSaveScoreButton()
     {
-        FindObjectOfType<RankingManager>().AddScore();
+        FindObjectOfType<StackRankingManager>().AddScore();
     }
 }

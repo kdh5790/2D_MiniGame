@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HomeUI : BaseUI
+public class StackHomeUI : StackBaseUI
 {
     Button startBtn;
     Button exitBtn;
@@ -14,7 +14,7 @@ public class HomeUI : BaseUI
         return UIState.Home;
     }
 
-    public override void Init(UIManager uiManager)
+    public override void Init(StackUIManager uiManager)
     {
         base.Init(uiManager);
 
@@ -39,6 +39,6 @@ public class HomeUI : BaseUI
 
     void OnClickRankingButton()
     {
-        FindObjectOfType<RankingUI>(true).OnRanikngBoard();
+        FindObjectOfType<StackRankingUI>(true).OnRanikngBoard();
     }
 }
