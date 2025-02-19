@@ -8,10 +8,6 @@ public class ObstacleCreator : MonoBehaviour
     public GameObject obtaclePrefab;
     private List<GameObject> obtacleList = new List<GameObject>();
 
-    private void Start()
-    {
-    }
-
     public void CreateObtacle()
     {
         foreach(var obj in obtacleList)
