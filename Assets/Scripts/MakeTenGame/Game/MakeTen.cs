@@ -20,7 +20,7 @@ public class MakeTen : MonoBehaviour
             instance = this;
 
         sum = 0;
-        time = 120f;
+        time = 100f;
     }
 
     private void Update()
