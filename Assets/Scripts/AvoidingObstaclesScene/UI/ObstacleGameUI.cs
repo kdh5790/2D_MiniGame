@@ -11,7 +11,7 @@ public class ObstacleGameUI : MonoBehaviour
     TextMeshProUGUI timeText;
     TextMeshProUGUI speedText;
 
-    float time = 0f;
+    public float time = 0f;
 
     void Start()
     {

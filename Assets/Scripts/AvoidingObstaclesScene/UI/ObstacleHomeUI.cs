@@ -23,7 +23,7 @@ public class ObstacleHomeUI : MonoBehaviour
         returnLobbyButton.onClick.AddListener(OnClickReturnLobbyButton);
     }
 
-    private void OnClickStartButton()
+    public void OnClickStartButton()
     {
         background.StartSpeedUpCorountine();
         FindObjectOfType<ObstacleGameUI>(true).gameObject.SetActive(true);

@@ -21,6 +21,12 @@ public class ObstaclesPlayer : MonoBehaviour
         rigid.gravityScale = 1f;
         circelCollider.isTrigger = true;
 
+        float time = FindObjectOfType<ObstacleGameUI>(true).time;
+
+
         FindObjectOfType<ObstaclesBackGround>().speed = 0f;
+        FindObjectOfType<ObstacleGameUI>(true).gameObject.SetActive(false);
+        FindObjectOfType<ObstacleScoreUI>(true).gameObject.SetActive(true);
+        FindObjectOfType<ObstacleScoreUI>().SetScore(time);
     }
 }
