@@ -4,13 +4,15 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class DialogueUI : MonoBehaviour
 {
-    List<DialogueNPC> npcList;
+    DialogueNPC currentNpc;
     int npcID;
+
     TextMeshProUGUI dialogueText;
+    Image npcImage;
+    TextMeshProUGUI npcNameText;
 
     [SerializeField] private Button choiceButton1;
     [SerializeField] private Button choiceButton2;
@@ -18,15 +20,27 @@ public class DialogueUI : MonoBehaviour
 
     private void Start()
     {
-        npcList = FindObjectsOfType<DialogueNPC>().ToList();
         choiceButton1.onClick.AddListener(OnClickChoiceButton1);
         choiceButton2.onClick.AddListener(OnClickChoiceButton2);
         closeButton.onClick.AddListener(OnClickCloseButton);
     }
 
+    private void OnEnable()
+    {
+        npcImage = transform.Find("NPCInfo").GetComponentInChildren<Image>(true);
+        npcNameText = transform.Find("NPCInfo").GetComponentInChildren<TextMeshProUGUI>(true);
+    }
+
     // text = 기본 대사, _npcID = 대화 중인 NPCID, choiceText = 선택지 (선택지 있을 때만 버튼 표시)
     public IEnumerator TalkDialogue(string text, int _npcID, string choiceText1 = "", string choiceText2 = "")
     {
+        npcID = _npcID;
+
+        currentNpc = NPCManager.instance.dialogueNpcList.Find(x => x.npcID == npcID).GetComponent<DialogueNPC>();
+
+        npcImage.sprite = currentNpc.npcSprite.sprite;
+        npcNameText.text = currentNpc.npcName;
+
         choiceButton1.gameObject.SetActive(false);
         choiceButton2.gameObject.SetActive(false);
         closeButton.gameObject.SetActive(false);
@@ -36,7 +50,6 @@ public class DialogueUI : MonoBehaviour
 
         dialogueText.text = "";
 
-        npcID = _npcID;
 
         for (int i = 0; i < text.Length; i++)
         {
@@ -80,8 +93,7 @@ public class DialogueUI : MonoBehaviour
 
     private void OnClickChoiceButton1()
     {
-        var _npc = npcList.Find(x => x.npcID == npcID).GetComponent<DialogueNPC>();
-        string answer = _npc.GetAnswerDialogue(1);
+        string answer = currentNpc.GetAnswerDialogue(1);
 
         if (answer == string.Empty) return;
 
@@ -90,8 +102,7 @@ public class DialogueUI : MonoBehaviour
 
     private void OnClickChoiceButton2()
     {
-        var _npc = npcList.Find(x => x.npcID == npcID).GetComponent<DialogueNPC>();
-        string answer = _npc.GetAnswerDialogue(2);
+        string answer = currentNpc.GetAnswerDialogue(2);
 
         if (answer == string.Empty) return;
 

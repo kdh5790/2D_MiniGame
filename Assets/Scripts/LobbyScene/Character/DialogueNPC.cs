@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueNPC : NPC
 {
-
     [SerializeField] private DialogueUI dialogueUI;
+
+    public string npcName;
+    public SpriteRenderer npcSprite; 
 
     [TextArea]
     [SerializeField] private string firstDialogue = string.Empty;
@@ -20,15 +23,16 @@ public class DialogueNPC : NPC
     [TextArea]
     [SerializeField] private string answerDialogue2 = string.Empty;
 
+
     private void Start()
     {
         dialogueUI = FindObjectOfType<DialogueUI>(true);
-        npcID = 0;
+        npcSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isActive)
+        if (Input.GetKeyDown(KeyCode.Space) && isActive && !dialogueUI.gameObject.activeSelf)
         {
             dialogueUI.gameObject.SetActive(true);
             StartCoroutine(dialogueUI.TalkDialogue
