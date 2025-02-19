@@ -16,6 +16,8 @@ public class ObstacleScoreUI : MonoBehaviour
 
     public List<ObstacleCreator> obstacleCreatorList;
 
+    private const string BestTimeKey = "BestTime";
+
     void Start()
     {
         RestartButton.onClick.AddListener(OnClickRestartButton);
@@ -37,6 +39,7 @@ public class ObstacleScoreUI : MonoBehaviour
     public void SetScore(float time)
     {
         timeText.text = time.ToString("N2");
-        bestTimeText.text = time.ToString("N2");
+        float bestTime = PlayerPrefs.GetFloat(BestTimeKey, 0);
+        bestTimeText.text = bestTime.ToString("N2");
     }
 }
