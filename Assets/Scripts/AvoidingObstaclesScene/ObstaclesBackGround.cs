@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstaclesBackGround : MonoBehaviour
 {
     public List<GameObject> backgroundList;
-    public float speed = 2f;
+    public float speed = 0f;
     public bool isFirst = true;
 
     private void Start()
