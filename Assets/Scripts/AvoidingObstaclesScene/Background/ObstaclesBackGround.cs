@@ -41,11 +41,7 @@ public class ObstaclesBackGround : MonoBehaviour
 
     public IEnumerator SpeedUpCoroutine()
     {
-        StopAllCoroutines();
-
         PlayerController player = FindObjectOfType<PlayerController>();
-
-        player.GetComponent<ObstaclesPlayer>().Restart();
 
         speed = 2f;
 
