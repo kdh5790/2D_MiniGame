@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstaclesPlayer : PlayerController
+public class ObstaclesPlayer : MonoBehaviour
 {
+    SpriteRenderer sprite;
+    Rigidbody2D rigid;
+    CircleCollider2D circelCollider;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        sprite = GetComponent<SpriteRenderer>();
+        rigid = GetComponent<Rigidbody2D>();
+        circelCollider = GetComponent<CircleCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Dead()
     {
-        
+        sprite.color = new Color(0.3f, 0.3f, 0.3f);
+        rigid.gravityScale = 1f;
+        circelCollider.isTrigger = true;
     }
 }

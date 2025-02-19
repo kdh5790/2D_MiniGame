@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    public bool isDead = false;
 
     private Rigidbody2D rigidBody;
     private Animator animator;
@@ -26,7 +27,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        if (!isDead)
+            Move();
     }
 
     void Move()
