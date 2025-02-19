@@ -41,5 +41,7 @@ public class ObstacleScoreUI : MonoBehaviour
         timeText.text = time.ToString("N2");
         float bestTime = PlayerPrefs.GetFloat(BestTimeKey, 0);
         bestTimeText.text = bestTime.ToString("N2");
+
+        GoldManager.instance.MiniGameGold += (int)time;
     }
 }
