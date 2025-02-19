@@ -23,6 +23,9 @@ public class DialogueUI : MonoBehaviour
         choiceButton1.onClick.AddListener(OnClickChoiceButton1);
         choiceButton2.onClick.AddListener(OnClickChoiceButton2);
         closeButton.onClick.AddListener(OnClickCloseButton);
+
+        npcImage = transform.Find("NPCInfo").GetComponentInChildren<Image>(true);
+        npcNameText = transform.Find("NPCInfo").GetComponentInChildren<TextMeshProUGUI>(true);
     }
 
     private void OnEnable()

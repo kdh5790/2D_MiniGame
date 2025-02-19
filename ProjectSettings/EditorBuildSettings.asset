@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3_StackScene.unity
     guid: 43bb357a259747e4e9604287d1f2d70a
+  - enabled: 1
+    path: Assets/Scenes/4_ObstacleScene.unity
+    guid: f8a8c23b0ad3712468c9eceb36b6edab
   m_configObjects: {}

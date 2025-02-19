@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
+    [SerializeField] private Scene targetScene;
     [SerializeField] private SpriteRenderer[] runeSprites;
     private bool isActive = false;
 
@@ -24,9 +25,9 @@ public class Portal : MonoBehaviour
         ScreenFader fader = FindObjectOfType<ScreenFader>();
 
         if(fader != null)
-            StartCoroutine(fader.FadeOutSceneChange(Scene.Stack));
+            StartCoroutine(fader.FadeOutSceneChange(targetScene));
         else
-            SceneManager.LoadScene((int)Scene.Stack);
+            SceneManager.LoadScene((int)targetScene);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
