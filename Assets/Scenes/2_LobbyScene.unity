@@ -2284,6 +2284,7 @@ GameObject:
   - component: {fileID: 476175553}
   - component: {fileID: 476175552}
   - component: {fileID: 476175554}
+  - component: {fileID: 476175555}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2334,6 +2335,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCharacter: 0
   unlockCharacters: 
+--- !u!114 &476175555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476175551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d22192188acad0478e5bf8aacbd8019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueNpcList: []
 --- !u!1 &519686084
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,6 +3189,7 @@ MonoBehaviour:
   isActive: 0
   dialogueUI: {fileID: 195306673}
   npcName: WereBear
+  npcSprite: {fileID: 0}
   firstDialogue: "Lancer\uB97C \uBCF4\uC720\uD558\uACE0 \uC788\uB2E4\uBA74\n\uB85C\uBE44\uC5D0\uC11C
     'E' \uD0A4\uB97C \uB20C\uB7EC \n\uBC14\uB85C \uD0D1\uC2B9 \uBC0F \uB0B4\uB9AC\uAE30\uAC00
     \uAC00\uB2A5\uD569\uB2C8\uB2E4."
@@ -3543,6 +3558,7 @@ MonoBehaviour:
   isActive: 0
   dialogueUI: {fileID: 195306673}
   npcName: Priest
+  npcSprite: {fileID: 0}
   firstDialogue: "\uC548\uB155\uD558\uC138\uC694 \uAD81\uAE08\uD558\uC2E0\uAC8C \uC788\uC73C\uC2DC\uB2E4\uBA74\n\uC624\uB978\uCABD
     \uBC84\uD2BC\uC744 \uD074\uB9AD\uD574 \uC9C8\uBB38\uD574 \uC8FC\uC2DC\uBA74\n\uB2F5\uBCC0\uD574\uB4DC\uB9AC\uB3C4\uB85D
     \uD558\uACA0\uC2B5\uB2C8\uB2E4."
