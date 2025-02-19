@@ -34,6 +34,8 @@ public class MakeTen : MonoBehaviour
         {
             time = 0;
             isDead = true;
+            FindObjectOfType<MakeTenGameUI>().gameObject.SetActive(false);
+            FindObjectOfType<MakeTenScoreUI>(true).gameObject.SetActive(true);
         }
     }
 }

@@ -11,7 +11,8 @@ public enum Scene
     Start,
     Lobby,
     Stack,
-    Obstacle
+    Obstacle,
+    MakeTen
 }
 
 public class ScreenFader : MonoBehaviour
