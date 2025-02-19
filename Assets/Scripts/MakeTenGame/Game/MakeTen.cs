@@ -9,7 +9,10 @@ public class MakeTen : MonoBehaviour
     public List<GameObject> selectedNumber = new List<GameObject>();
     public int sum;
 
-    public bool isDead = true; 
+    public float time;
+    public int score;
+
+    public bool isDead = true;
 
     private void Awake()
     {
@@ -17,5 +20,20 @@ public class MakeTen : MonoBehaviour
             instance = this;
 
         sum = 0;
+        time = 120f;
+    }
+
+    private void Update()
+    {
+        if(time > 0)
+        {
+            time -= Time.deltaTime;
+        }
+
+        if(time < 0)
+        {
+            time = 0;
+            isDead = true;
+        }
     }
 }

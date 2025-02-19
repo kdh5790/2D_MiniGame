@@ -36,6 +36,7 @@ public class MouseController : MonoBehaviour
                 {
                     foreach (GameObject go in MakeTen.instance.selectedNumber.ToList())
                     {
+                        MakeTen.instance.score++;
                         MakeTen.instance.selectedNumber.Remove(go);
                         Destroy(go);
                     }

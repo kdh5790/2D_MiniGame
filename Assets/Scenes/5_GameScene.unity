@@ -526,13 +526,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 672349154}
+  - component: {fileID: 672349155}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &672349154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -554,6 +555,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &672349155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672349153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d0fd5196e7db04cb87bbc963eb4378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 456699093}
+  scoreText: {fileID: 1512680353}
 --- !u!1 &705860760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +1455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedNumber: []
   sum: 0
+  time: 0
+  score: 0
   isDead: 0
 --- !u!1 &1627223292
 GameObject:

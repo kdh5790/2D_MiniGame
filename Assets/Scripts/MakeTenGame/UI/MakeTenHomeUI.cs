@@ -26,6 +26,7 @@ public class MakeTenHomeUI : MonoBehaviour
     {
         MakeTen.instance.isDead = false;
         initializeNumber.InitializePannel();
+        FindObjectOfType<MakeTenGameUI>(true).gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
 
