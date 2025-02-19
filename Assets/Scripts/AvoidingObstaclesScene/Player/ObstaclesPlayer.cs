@@ -20,5 +20,7 @@ public class ObstaclesPlayer : MonoBehaviour
         sprite.color = new Color(0.3f, 0.3f, 0.3f);
         rigid.gravityScale = 1f;
         circelCollider.isTrigger = true;
+
+        FindObjectOfType<ObstaclesBackGround>().speed = 0f;
     }
 }

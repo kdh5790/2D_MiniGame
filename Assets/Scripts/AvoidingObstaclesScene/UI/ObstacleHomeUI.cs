@@ -25,8 +25,9 @@ public class ObstacleHomeUI : MonoBehaviour
 
     private void OnClickStartButton()
     {
+        background.StartSpeedUpCorountine();
+        FindObjectOfType<ObstacleGameUI>(true).gameObject.SetActive(true);
         gameObject.SetActive(false);
-        background.speed = 2f;
     }
 
     private void OnClickReturnLobbyButton()
