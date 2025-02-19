@@ -16,16 +16,9 @@ public class MouseController : MonoBehaviour
     float deltaX;
     float deltaY;
 
-    public bool mouseActive;
-
-    void Start()
-    {
-        mouseActive = true;
-    }
-
     void Update()
     {
-        if (mouseActive == true)
+        if (!MakeTen.instance.isDead)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -54,8 +47,8 @@ public class MouseController : MonoBehaviour
         }
         else
         {
-            MakeTen.instance.sum = 0;
             Destroy(instantiateSquare);
+
         }
     }
 

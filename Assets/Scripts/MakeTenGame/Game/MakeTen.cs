@@ -9,6 +9,8 @@ public class MakeTen : MonoBehaviour
     public List<GameObject> selectedNumber = new List<GameObject>();
     public int sum;
 
+    public bool isDead = true; 
+
     private void Awake()
     {
         if (instance == null)

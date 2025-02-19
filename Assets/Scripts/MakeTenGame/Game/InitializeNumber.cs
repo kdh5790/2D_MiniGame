@@ -11,18 +11,6 @@ public class InitializeNumber : MonoBehaviour
     float posX = -5.5f;
     float posY = 4.4f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        InitializePannel();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void InitializePannel()
     {
         Vector2 firstPos = new Vector2(posX, posY);
