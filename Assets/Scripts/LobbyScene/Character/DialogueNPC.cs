@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class DialogueNPC : NPC
 {
+
     [SerializeField] private DialogueUI dialogueUI;
+
+    [TextArea]
+    [SerializeField] private string firstDialogue = string.Empty;
+
+    [TextArea]
+    [SerializeField] private string choiceText1 = string.Empty;
+    [TextArea]
+    [SerializeField] private string choiceText2 = string.Empty;
+
+    [TextArea]
+    [SerializeField] private string answerDialogue1 = string.Empty;
+    [TextArea]
+    [SerializeField] private string answerDialogue2 = string.Empty;
 
     private void Start()
     {
         dialogueUI = FindObjectOfType<DialogueUI>(true);
+        npcID = 0;
     }
 
     private void Update()
@@ -16,10 +31,24 @@ public class DialogueNPC : NPC
         if (Input.GetKeyDown(KeyCode.Space) && isActive)
         {
             dialogueUI.gameObject.SetActive(true);
-            StartCoroutine(dialogueUI.DialogueText
-                ("안녕하세요 궁금하신게 있으시다면\r\n오른쪽 버튼을 클릭해 질문해 주시면\r\n답변해드리도록 하겠습니다.",
-                "골드를 획득하는 \r\n방법을 알고 싶어요", "로비에서 이동하는게 \r\n너무 답답해요"));
+            StartCoroutine(dialogueUI.TalkDialogue
+                (firstDialogue, npcID,
+                choiceText1, choiceText2));
         }
     }
 
+    public string GetAnswerDialogue(int num)
+    {
+        switch(num)
+        {
+            case 1:
+                return answerDialogue1;
+
+            case 2:
+                return answerDialogue2;
+
+            default:
+                return string.Empty;
+        }
+    }
 }

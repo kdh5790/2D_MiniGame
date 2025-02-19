@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    public int npcID;
+
     public bool isActive = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
