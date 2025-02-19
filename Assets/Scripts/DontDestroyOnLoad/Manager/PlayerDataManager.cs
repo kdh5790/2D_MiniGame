@@ -6,7 +6,8 @@ public class PlayerDataManager : MonoBehaviour
 {
     public static PlayerDataManager instance;
 
-    public Character currentCharacter;
+    public Character currentCharacter = Character.Knight;
+    public Character returnCharacter;
     public List<Character> unlockCharacters = new List<Character>();
 
     private void Awake()
@@ -23,7 +24,6 @@ public class PlayerDataManager : MonoBehaviour
 
     private void Start()
     {
-        currentCharacter = Character.Knight;
         unlockCharacters.Add(currentCharacter);
     }
 }

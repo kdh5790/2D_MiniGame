@@ -11,11 +11,14 @@ public class PlayerInfoUI : MonoBehaviour
     public Image characterFrameImage;
     public List<CharacterScriptableObject> charactersInfo;
 
-    private void Start()
+    private void Awake()
     {
         goldText = GetComponentInChildren<TextMeshProUGUI>();
         characterFrameImage = transform.Find("SpriteFrame").Find("PlayerSprite").GetComponent<Image>();
+    }
 
+    private void Start()
+    {
         UpdateGoldText();
         ChangeCharacterFrameImage(Character.Knight);
     }

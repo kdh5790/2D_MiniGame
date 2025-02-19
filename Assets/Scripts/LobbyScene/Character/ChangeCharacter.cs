@@ -14,16 +14,22 @@ public class ChangeCharacter : MonoBehaviour
 {
     [SerializeField] private Animator[] charactersAnimator;
 
-    public Character currentCharacter = Character.Knight;
-    public Character returnCharacter;
+    private void Start()
+    {
+        if (PlayerDataManager.instance.currentCharacter == Character.Lancer)
+            SpriteChange(PlayerDataManager.instance.returnCharacter);
+        else
+            SpriteChange(PlayerDataManager.instance.currentCharacter);
+
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(currentCharacter == Character.Lancer)
+            if (PlayerDataManager.instance.currentCharacter == Character.Lancer)
             {
-                SpriteChange(returnCharacter);
+                SpriteChange(PlayerDataManager.instance.returnCharacter);
                 return;
             }
             SpriteChange(Character.Lancer);
@@ -47,9 +53,9 @@ public class ChangeCharacter : MonoBehaviour
 
         playerAnim.runtimeAnimatorController = charactersAnimator[(int)type].runtimeAnimatorController;
 
-        if (type == Character.Lancer)
+        if (type == Character.Lancer && PlayerDataManager.instance.currentCharacter != Character.Lancer)
         {
-            returnCharacter = currentCharacter;
+            PlayerDataManager.instance.returnCharacter = PlayerDataManager.instance.currentCharacter;
             player.moveSpeed = 5f;
         }
         else
@@ -57,7 +63,6 @@ public class ChangeCharacter : MonoBehaviour
 
         FindObjectOfType<PlayerInfoUI>().ChangeCharacterFrameImage(type);
 
-        currentCharacter = type;
-        PlayerDataManager.instance.currentCharacter = currentCharacter;
+        PlayerDataManager.instance.currentCharacter = type;
     }
 }
