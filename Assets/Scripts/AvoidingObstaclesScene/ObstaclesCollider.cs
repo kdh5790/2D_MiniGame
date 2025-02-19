@@ -34,6 +34,7 @@ public class ObstaclesCollider : MonoBehaviour
 
             // 가장 먼거리의 오브젝트의 (x값 + 고정값, 0, 0) 으로 위치 변경
             collision.gameObject.transform.position = postion;
+            collision.GetComponent<ObstacleCreator>().CreateObtacle();
         }
     }
 }
