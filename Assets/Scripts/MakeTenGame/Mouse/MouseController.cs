@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
-    [SerializeField] private GameObject dragSquare;
-    private GameObject square;
+    [SerializeField] private GameObject dragPrefab;
+    private GameObject instantiateSquare;
 
     private Vector3 startPos;
     private Vector3 nowPos;
@@ -14,7 +16,7 @@ public class MouseController : MonoBehaviour
     float deltaX;
     float deltaY;
 
-    public bool mouseActive; 
+    public bool mouseActive;
 
     void Start()
     {
@@ -25,7 +27,7 @@ public class MouseController : MonoBehaviour
     {
         if (mouseActive == true)
         {
-            if (Input.GetMouseButtonDown(0)) 
+            if (Input.GetMouseButtonDown(0))
             {
                 StartDrag();
             }
@@ -37,12 +39,23 @@ public class MouseController : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                Destroy(square);
+                if (MakeTen.instance.sum == 10)
+                {
+                    foreach (GameObject go in MakeTen.instance.selectedNumber.ToList())
+                    {
+                        MakeTen.instance.selectedNumber.Remove(go);
+                        Destroy(go);
+                    }
+                }
+
+                Destroy(instantiateSquare);
+                MakeTen.instance.sum = 0;
             }
         }
         else
         {
-            Destroy(square);
+            MakeTen.instance.sum = 0;
+            Destroy(instantiateSquare);
         }
     }
 
@@ -53,7 +66,7 @@ public class MouseController : MonoBehaviour
             (new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
 
         // 드래그 중인 영역을 나타낼 오브젝트 생성
-        square = Instantiate(dragSquare, new Vector3(0, 0, 0), Quaternion.identity);
+        instantiateSquare = Instantiate(dragPrefab, Vector3.zero, Quaternion.identity);
     }
 
     private void UpdateDragArea()
@@ -72,9 +85,9 @@ public class MouseController : MonoBehaviour
         deltaPos = startPos + (nowPos - startPos) / 2;
 
         // 오브젝트의 위치를 드래그 영역의 중심점으로 설정
-        square.transform.position = deltaPos;
+        instantiateSquare.transform.position = deltaPos;
 
         // 오브젝트의 크기를 드래그 영역에 맞게 조정
-        square.transform.localScale = new Vector3(deltaX, deltaY, 0);
+        instantiateSquare.transform.localScale = new Vector3(deltaX, deltaY, 0);
     }
 }

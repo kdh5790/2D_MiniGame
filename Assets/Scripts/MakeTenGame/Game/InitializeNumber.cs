@@ -6,7 +6,7 @@ public class InitializeNumber : MonoBehaviour
 {
     [SerializeField] private List<GameObject> numberPrefabs = new List<GameObject>();
 
-    private List<GameObject> inGameNumbers = new List<GameObject>();
+    public List<GameObject> inGameNumbers = new List<GameObject>();
 
     float posX = -5.5f;
     float posY = 4.4f;
