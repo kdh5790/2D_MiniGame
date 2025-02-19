@@ -535,6 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
+  obtacleList: []
 --- !u!1 &124061554
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a97017a1e5dac5438b3b7b848a2fa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0
 --- !u!1 &289409676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
+  obtacleList: []
 --- !u!1 &363340900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,7 +2265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBA54\uC778\uC73C\uB85C \uB3CC\uC544\uAC00\uAE30"
+  m_text: "\uB85C\uBE44\uB85C \uB3CC\uC544\uAC00\uAE30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61336e6be9d65274e8990bf0baf79f0d, type: 2}
   m_sharedMaterial: {fileID: 4294618855330564210, guid: 61336e6be9d65274e8990bf0baf79f0d, type: 2}
@@ -2561,6 +2564,7 @@ MonoBehaviour:
   - {fileID: 321008505}
   - {fileID: 1825409163}
   - {fileID: 53299727}
+  initBackgroundPostionList: []
   speed: 0
   isFirst: 1
 --- !u!1 &1178506137
@@ -2579,7 +2583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1178506138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3256,6 +3260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
+  obtacleList: []
 --- !u!1 &1735827894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,6 +3607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
+  obtacleList: []
 --- !u!1 &1881884991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3834,7 @@ GameObject:
   - component: {fileID: 2031520077}
   - component: {fileID: 2031520076}
   m_Layer: 5
-  m_Name: ReturnHomeButton
+  m_Name: ReturnLobbyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3945,13 +3951,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114285787}
+  - component: {fileID: 2114285788}
   m_Layer: 5
   m_Name: ScoreUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2114285787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3974,6 +3981,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2114285788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114285786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1243bce269e55594cac50196f702a992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 1735827896}
+  bestTimeText: {fileID: 1068669470}
+  RestartButton: {fileID: 1894568002}
+  returnLobbyButton: {fileID: 2031520076}
+  obstacleCreatorList: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

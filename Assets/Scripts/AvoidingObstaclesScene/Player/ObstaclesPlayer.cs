@@ -29,4 +29,15 @@ public class ObstaclesPlayer : MonoBehaviour
         FindObjectOfType<ObstacleScoreUI>(true).gameObject.SetActive(true);
         FindObjectOfType<ObstacleScoreUI>().SetScore(time);
     }
+
+    public void Restart()
+    {
+        sprite.color = Color.white;
+        rigid.gravityScale = 0f;
+        circelCollider.isTrigger = false;
+
+        GetComponent<PlayerController>().isDead = false;
+
+        transform.localPosition = new Vector3(0f, -3.7f, 0f);
+    }
 }

@@ -6,12 +6,18 @@ using UnityEngine;
 public class ObstaclesBackGround : MonoBehaviour
 {
     public List<GameObject> backgroundList;
+    public List<Vector3> initBackgroundPostionList;
     public float speed = 0f;
     public bool isFirst = true;
 
     private void Start()
     {
-        StartCreateObacle();
+        StartCreateObstacle();
+
+        foreach (GameObject go in backgroundList)
+        {
+            initBackgroundPostionList.Add(go.transform.localPosition);
+        }
     }
 
     void Update()
@@ -19,7 +25,7 @@ public class ObstaclesBackGround : MonoBehaviour
         transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
 
-    void StartCreateObacle()
+    void StartCreateObstacle()
     {
         for (int i = isFirst ? 1 : 0; i < backgroundList.Count; i++)
         {
@@ -35,14 +41,18 @@ public class ObstaclesBackGround : MonoBehaviour
 
     public IEnumerator SpeedUpCoroutine()
     {
+        StopAllCoroutines();
+
         PlayerController player = FindObjectOfType<PlayerController>();
+
+        player.GetComponent<ObstaclesPlayer>().Restart();
 
         speed = 2f;
 
         while (!player.isDead)
         {
-            IncreaseSpeed(0.2f);
             yield return new WaitForSeconds(5.0f);
+            IncreaseSpeed(0.2f);
         }
     }
 

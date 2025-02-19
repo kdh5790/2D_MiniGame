@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,23 +12,26 @@ public class ObstacleScoreUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI bestTimeText;
 
     [SerializeField] private Button RestartButton;
-    [SerializeField] private Button ReturnHomeButton;
+    [SerializeField] private Button returnLobbyButton;
+
+    public List<ObstacleCreator> obstacleCreatorList;
 
     void Start()
     {
         RestartButton.onClick.AddListener(OnClickRestartButton);
-        ReturnHomeButton.onClick.AddListener(OnClickReturnHomeButton);
+        returnLobbyButton.onClick.AddListener(OnClickReturnLobbyButton);
+
+        obstacleCreatorList = FindObjectsOfType<ObstacleCreator>(true).ToList();
     }
 
     private void OnClickRestartButton()
     {
         SceneManager.LoadScene((int)Scene.Obstacle);
-        FindObjectOfType<ObstacleHomeUI>(true).OnClickStartButton();
     }
 
-    private void OnClickReturnHomeButton()
+    private void OnClickReturnLobbyButton()
     {
-        SceneManager.LoadScene((int)Scene.Obstacle);
+        SceneManager.LoadScene((int)Scene.Lobby);
     }
 
     public void SetScore(float time)

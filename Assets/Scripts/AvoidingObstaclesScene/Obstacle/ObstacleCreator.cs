@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObstacleCreator : MonoBehaviour
 {
     public GameObject obtaclePrefab;
-    private List<GameObject> obtacleList = new List<GameObject>();
+    public List<GameObject> obtacleList = new List<GameObject>();
 
     public void CreateObtacle()
     {
