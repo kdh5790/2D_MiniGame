@@ -931,7 +931,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 496150989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8184cfe57f920242b7d5c75fc22d9f7, type: 3}
+  m_Script: {fileID: 11500000, guid: fec88fd57ccf6e643bd640c690f62049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   backGroundCloud:
@@ -939,7 +939,7 @@ MonoBehaviour:
   - {fileID: 1140885391}
   - {fileID: 293500671}
   - {fileID: 1535709602}
-  speed: 1
+  speed: 1.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +1981,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048149837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8184cfe57f920242b7d5c75fc22d9f7, type: 3}
+  m_Script: {fileID: 11500000, guid: fec88fd57ccf6e643bd640c690f62049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   backGroundCloud:
@@ -1989,7 +1989,7 @@ MonoBehaviour:
   - {fileID: 460243739}
   - {fileID: 19495192}
   - {fileID: 839006534}
-  speed: 0.7
+  speed: 1
 --- !u!1 &1140885391
 GameObject:
   m_ObjectHideFlags: 0
