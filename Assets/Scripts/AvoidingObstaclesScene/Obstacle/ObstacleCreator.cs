@@ -13,6 +13,7 @@ public class ObstacleCreator : MonoBehaviour
 
     private void Awake()
     {
+        // 장애물 오브젝트 생성 및 큐에 넣어주기
         for (int i = 0; i < poolCount; i++)
         {
             GameObject go = Instantiate(obtaclePrefab, transform);
@@ -23,13 +24,15 @@ public class ObstacleCreator : MonoBehaviour
 
     public void CreateObtacle()
     {
-        // 현재 생성된 장애물을 파괴 후 다시 랜덤한 위치에 장애물 생성
-        foreach(var obj in obtacleList)
+        // 현재 생성된 장애물을 비활성 후 다시 큐에 넣어줌
+        foreach (var obj in obtacleList)
         { 
             obj.SetActive(false);
             obstaclePool.Enqueue(obj);
         }
 
+
+        // 큐에서 장애물을 꺼내와 위치 랜덤 설정 후 활성화하고 리스트에 넣어줌
         for (int i = 0; i < 5; i++)
         {
             GameObject go = obstaclePool.Dequeue();
