@@ -7,7 +7,7 @@ public class NPCManager : MonoBehaviour
 {
     public static NPCManager instance;
 
-    public List<DialogueNPC> dialogueNpcList;
+    public List<DialogueNPC> dialogueNpcList; // 대화 가능 NPC 리스트
 
     private void Awake()
     {
@@ -18,10 +18,5 @@ public class NPCManager : MonoBehaviour
     void Start()
     {
         dialogueNpcList = FindObjectsOfType<DialogueNPC>().ToList();
-    }
-
-    void Update()
-    {
-        
     }
 }

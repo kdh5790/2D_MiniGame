@@ -6,8 +6,8 @@ public class GoldManager : MonoBehaviour
 {
     public static GoldManager instance;
 
-    public int PlayerGold;
-    public int MiniGameGold;
+    public int PlayerGold; // 플레이어 소지 골드
+    public int MiniGameGold; // 미니게임에서 획득한 골드
 
     private void Awake()
     {

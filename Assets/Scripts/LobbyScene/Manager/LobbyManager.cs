@@ -10,6 +10,7 @@ public class LobbyManager : MonoBehaviour
     {
         notice = FindObjectOfType<NoticeUI>(true);
 
+        // 미니게임으로 쌓인 골드를 플레이어 골드에 추가
         if (GoldManager.instance.MiniGameGold != 0)
         {
             string text = $"미니게임 중 획득한 점수 만큼\r\n골드를 획득했습니다.\r\n\r\n획득한 골드 : {GoldManager.instance.MiniGameGold}G\r\n";

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
-    [SerializeField] private Scene targetScene;
-    [SerializeField] private SpriteRenderer[] runeSprites;
+    [SerializeField] private Scene targetScene; // 이동할 Scene
+    [SerializeField] private SpriteRenderer[] runeSprites; // 룬문양 스프라이트
     private bool isActive = false;
 
     private void Update()
@@ -14,12 +14,14 @@ public class Portal : MonoBehaviour
         if (!isActive)
             return;
 
+        // 활성화 상태에서 스페이스 키 입력 시 Scene 이동
         if (Input.GetKeyDown(KeyCode.Space))
         {
             MoveScene();
         }
     }
 
+    // Scene 이동
     private void MoveScene()
     {
         ScreenFader fader = FindObjectOfType<ScreenFader>();
@@ -34,6 +36,7 @@ public class Portal : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            // 플레이어가 트리거에 들어왔다면 룬문양의 솔팅오더를 포탈 위로 변경
             isActive = true;
 
             foreach (var sprite in runeSprites)
@@ -47,6 +50,7 @@ public class Portal : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            // 플레이어가 트리거에서 빠져나갔다면 룬문양의 솔팅오더를 포탈 아래로 변경
             isActive = false;
 
             foreach (var sprite in runeSprites)

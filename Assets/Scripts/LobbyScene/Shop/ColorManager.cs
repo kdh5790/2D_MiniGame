@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ColorManager : MonoBehaviour
 {
-    public Color previewColor = Color.white;
+    public Color previewColor = Color.white; // 미리보기 색상
 
     Image previewcharacterFrame;
-    Button applyColorButton;
-    Button restoreButton;
+    Button applyColorButton; // 적용 버튼
+    Button restoreButton; // 되돌리기 버튼
 
     void Start()
     {

@@ -20,11 +20,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
-    void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
         if (!isDead)
@@ -35,13 +30,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
+        // 이동 중인지 아닌지 체크 하여 애니메이션 변경
         if (animator != null)
-        {
-            if (moveInput.magnitude == 0)
-                animator.SetBool("IsMove", false);
-            else
-                animator.SetBool("IsMove", true);
-        }
+            animator.SetBool("IsMove", moveInput.magnitude == 0 ? false : true);
 
         moveVelocity = moveInput.normalized * moveSpeed; // 이동 속도 구하기
         rigidBody.MovePosition(rigidBody.position + moveVelocity * Time.fixedDeltaTime); // 이동

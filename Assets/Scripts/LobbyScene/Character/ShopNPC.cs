@@ -22,6 +22,7 @@ public class ShopNPC : NPC
 
         if (collision.CompareTag("Player"))
         {
+            // 트리거를 빠져나갔다면 상점 닫기
             shopUI.CloseShopUI();
         }
     }

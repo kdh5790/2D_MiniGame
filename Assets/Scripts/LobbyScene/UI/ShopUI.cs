@@ -35,6 +35,7 @@ public class ShopUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // 색상변경 UI에 있는 캐릭터 프레임 변경
     public void ChangeSprite()
     {
         colorCharacterImage = transform.Find("CharacterFrame").GetComponent<Image>();

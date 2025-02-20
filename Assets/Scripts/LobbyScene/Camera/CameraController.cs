@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
+        // 카메라가 플레이어를 따라 이동하도록 설정
         Vector3 direction = player.transform.position - transform.position;
         Vector3 moveVector = new Vector3(direction.x * cameraSpeed * Time.deltaTime, direction.y * cameraSpeed * Time.deltaTime, 0.0f);
         transform.Translate(moveVector);

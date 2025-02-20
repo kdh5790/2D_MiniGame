@@ -11,15 +11,15 @@ public class DialogueNPC : NPC
     public SpriteRenderer npcSprite; 
 
     [TextArea]
-    [SerializeField] private string firstDialogue = string.Empty;
+    [SerializeField] private string firstDialogue = string.Empty; // 첫 대사
 
     [TextArea]
-    [SerializeField] private string choiceText1 = string.Empty;
+    [SerializeField] private string choiceText1 = string.Empty; // 선택지
     [TextArea]
-    [SerializeField] private string choiceText2 = string.Empty;
+    [SerializeField] private string choiceText2 = string.Empty; 
 
     [TextArea]
-    [SerializeField] private string answerDialogue1 = string.Empty;
+    [SerializeField] private string answerDialogue1 = string.Empty; // 선택지에 대한 답변
     [TextArea]
     [SerializeField] private string answerDialogue2 = string.Empty;
 
@@ -34,13 +34,16 @@ public class DialogueNPC : NPC
     {
         if (Input.GetKeyDown(KeyCode.Space) && isActive && !dialogueUI.gameObject.activeSelf)
         {
+            // 현재 활성화 상태이고 대화중이 아니라면
             dialogueUI.gameObject.SetActive(true);
+
             StartCoroutine(dialogueUI.TalkDialogue
                 (firstDialogue, npcID,
                 choiceText1, choiceText2));
         }
     }
 
+    // 선택지에 대한 답변 반환
     public string GetAnswerDialogue(int num)
     {
         switch(num)

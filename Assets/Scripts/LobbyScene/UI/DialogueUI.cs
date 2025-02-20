@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class DialogueUI : MonoBehaviour
 {
     DialogueNPC currentNpc;
-    int npcID;
+    int npcID; // 현재 대화 중인 NPC를 판단할 ID
 
-    TextMeshProUGUI dialogueText;
-    Image npcImage;
-    TextMeshProUGUI npcNameText;
+    TextMeshProUGUI dialogueText; // 대사(대사가 여러개라면 List나 배열로 바꿔도 될 듯?)
+    Image npcImage; // NPC 스프라이트(이미지)
+    TextMeshProUGUI npcNameText; // NPC 이름
 
-    [SerializeField] private Button choiceButton1;
-    [SerializeField] private Button choiceButton2;
+    [SerializeField] private Button choiceButton1; // 선택지버튼 1
+    [SerializeField] private Button choiceButton2; // 선택지버튼 2
     [SerializeField] private Button closeButton;
 
     private void Start()
@@ -39,6 +39,7 @@ public class DialogueUI : MonoBehaviour
     {
         npcID = _npcID;
 
+        // NPC 목록에서 현재 대화 중인 NPC를 가져옴
         currentNpc = NPCManager.instance.dialogueNpcList.Find(x => x.npcID == npcID).GetComponent<DialogueNPC>();
 
         npcImage.sprite = currentNpc.npcSprite.sprite;
