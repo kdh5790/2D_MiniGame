@@ -536,6 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
   obtacleList: []
+  poolCount: 5
 --- !u!1 &124061554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
   obtacleList: []
+  poolCount: 5
 --- !u!1 &363340900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,6 +3399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
   obtacleList: []
+  poolCount: 5
 --- !u!1 &1735827894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,6 +3747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obtaclePrefab: {fileID: 2482646268822884404, guid: d4b453696a2aef944b7fa2e34ed78094, type: 3}
   obtacleList: []
+  poolCount: 5
 --- !u!1 &1881884991
 GameObject:
   m_ObjectHideFlags: 0
