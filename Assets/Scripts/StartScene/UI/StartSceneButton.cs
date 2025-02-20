@@ -12,13 +12,16 @@ public class StartSceneButton : MonoBehaviour
 
     private void Start()
     {
+        // 버튼에 클릭 시 실행 할 함수 추가
         startBtn.onClick.AddListener(OnClickStartButton);
         exitBtn.onClick.AddListener(OnClickExitButton);
+
         screenFader = FindObjectOfType<ScreenFader>();
     }
 
     void OnClickStartButton()
     {
+        // FadeOut 코루틴 실행
         StartCoroutine(screenFader.FadeOutSceneChange(Scene.Lobby));
     }
 
