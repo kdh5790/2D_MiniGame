@@ -12,21 +12,25 @@ public class ObstaclesBackGround : MonoBehaviour
 
     private void Start()
     {
+        // 장애물 생성
         StartCreateObstacle();
 
         foreach (GameObject go in backgroundList)
         {
+            // 배경화면 초기 위치 추가
             initBackgroundPostionList.Add(go.transform.localPosition);
         }
     }
 
     void Update()
     {
+        // 아래로 일정한 속도로 이동
         transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
 
     void StartCreateObstacle()
     {
+        // 첫 생성이라면 1 아니라면 0 부터 시작해 장애물 생성
         for (int i = isFirst ? 1 : 0; i < backgroundList.Count; i++)
         {
             backgroundList[i].GetComponent<ObstacleCreator>().CreateObtacle();
@@ -39,6 +43,7 @@ public class ObstaclesBackGround : MonoBehaviour
         StartCoroutine(SpeedUpCoroutine());
     }
 
+    // 5초 마다 속도 증가 코루틴
     public IEnumerator SpeedUpCoroutine()
     {
         PlayerController player = FindObjectOfType<PlayerController>();

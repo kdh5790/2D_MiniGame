@@ -8,6 +8,7 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            // 플레이어가 닿았다면 사망판정
             collision.GetComponent<PlayerController>().isDead = true;
             collision.GetComponent<ObstaclesPlayer>().Dead();
         }

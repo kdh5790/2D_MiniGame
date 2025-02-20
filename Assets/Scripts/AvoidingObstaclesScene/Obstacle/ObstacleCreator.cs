@@ -10,6 +10,7 @@ public class ObstacleCreator : MonoBehaviour
 
     public void CreateObtacle()
     {
+        // 현재 생성된 장애물을 파괴 후 다시 랜덤한 위치에 장애물 생성
         foreach(var obj in obtacleList)
             Destroy(obj);
 

@@ -17,6 +17,7 @@ public class ColorSlot : MonoBehaviour, IPointerClickHandler
         colorManager = FindObjectOfType<ColorManager>();
     }
 
+    // 마우로 클릭 or 터치 시 실행
     public void OnPointerClick(PointerEventData eventData)
     {
         previewImage.color = _color;

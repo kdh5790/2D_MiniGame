@@ -9,12 +9,12 @@ public class MouseController : MonoBehaviour
     [SerializeField] private GameObject dragPrefab; // 드래그 박스 프리팹
     private GameObject instantiateSquare; // 생성한 드래그 박스
 
-    private Vector3 startPos;
-    private Vector3 nowPos;
-    private Vector3 deltaPos;
+    private Vector3 startPos; // 드래그 시작 위치
+    private Vector3 nowPos; // 현재 마우스 위치
+    private Vector3 deltaPos; // 드래그 영역 중심 위치
 
-    float deltaX;
-    float deltaY;
+    float deltaX; // X 방향의 드래그 거리
+    float deltaY; // Y 방향의 드래그 거리
 
     void Update()
     {

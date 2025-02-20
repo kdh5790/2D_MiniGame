@@ -54,13 +54,14 @@ public class DialogueUI : MonoBehaviour
 
         dialogueText.text = "";
 
-
+        // 대사 출력
         for (int i = 0; i < text.Length; i++)
         {
             dialogueText.text += text[i];
             yield return new WaitForSeconds(0.03f);
         }
 
+        // 선택지 표시
         if (choiceText1 != "")
         {
             choiceButton1.gameObject.SetActive(true);
@@ -73,12 +74,14 @@ public class DialogueUI : MonoBehaviour
             choiceButton2.GetComponentInChildren<TextMeshProUGUI>().text = choiceText2;
         }
 
+        // 선택지 없다면 표시 X
         if(!choiceButton1.gameObject.activeSelf && !choiceButton2.gameObject.activeSelf)
         {
             closeButton.gameObject.SetActive(true);
         }
     }
 
+    // 선택지에 대한 답변 코루틴
     private IEnumerator AnswerDialogue(string answer)
     {
         choiceButton1.gameObject.SetActive(false);
@@ -86,6 +89,7 @@ public class DialogueUI : MonoBehaviour
 
         dialogueText.text = string.Empty;
 
+        // 텍스트 출력
         for (int i = 0; i < answer.Length; i++)
         {
             dialogueText.text += answer[i];
