@@ -2751,7 +2751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3859d47025a742a46a2ee6c701549ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerGold: 10000
+  PlayerGold: 1500
   MiniGameGold: 0
 --- !u!4 &476175553
 Transform:

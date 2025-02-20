@@ -8,9 +8,9 @@ public class CameraController : MonoBehaviour
 
     public PlayerController player;
 
-    float maxX = 7.1f;
+    float maxX = 7.1f; // 제한할 X값
     float minX = -2.1f;
-    float maxY = 2f;
+    float maxY = 2f; // 제한할 Y값
     float minY = -3f;
 
     private void Start()
