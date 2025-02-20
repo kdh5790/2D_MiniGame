@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
 using UnityEngine;
-using UnityEngine.Experimental.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.U2D;
 
@@ -19,7 +16,7 @@ public class ScreenFader : MonoBehaviour
 {
     private static ScreenFader Instance { get; set; }
 
-    Canvas canvas;
+    Canvas[] canvas;
     SpriteRenderer sprite;
 
     private void Awake()
@@ -35,27 +32,33 @@ public class ScreenFader : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
 
-        sprite.color = new UnityEngine.Color(0, 0, 0, 0);
+        sprite.color = new Color(0, 0, 0, 0);
     }
 
     public IEnumerator FadeOutSceneChange(Scene state)
     {
-        canvas = FindObjectOfType<Canvas>();
+        canvas = FindObjectsOfType<Canvas>();
 
         // 캔버스 비활성화
         if (canvas != null)
-            canvas.gameObject.SetActive(false);
+        {
+            foreach (Canvas c in canvas)
+            {
+                c.gameObject.SetActive(false);
+            }
+        }
+            
 
         // 목표 컬러
-        UnityEngine.Color target = new UnityEngine.Color(0, 0, 0, 1);
+        Color targetColor = new Color(0, 0, 0, 1);
 
-        float t = 0f; // 
-        float speed = 0.4f; // 페이드 아웃 속도
+        float t = 0f;
 
-        while (t < 1)
+        while (t < 1.5f)
         {
-            t += Time.deltaTime * speed;
-            sprite.color = UnityEngine.Color.Lerp(sprite.color, target, t);
+            t += Time.deltaTime;
+            float clamp = Mathf.Clamp01(t / 1);
+            sprite.color = Color.Lerp(sprite.color, targetColor, clamp);
 
             yield return null;
         }
@@ -66,28 +69,32 @@ public class ScreenFader : MonoBehaviour
 
     public IEnumerator FadeInSceneChange()
     {
-        canvas = FindObjectOfType<Canvas>();
+        sprite.color = new Color(0, 0, 0, 1);
+
+        canvas = FindObjectsOfType<Canvas>();
 
 
         // 목표 컬러
-        UnityEngine.Color target = new UnityEngine.Color(0, 0, 0, 0);
+        Color targetColor = new Color(0, 0, 0, 0);
 
-        float t = 0f; // 
-        float speed = 0.1f; // 페이드 아웃 속도
+        float t = 0f;
 
-        while (t < 1)
+        while (t < 1.5f)
         {
-            t += Time.deltaTime * speed;
-            t = Mathf.Clamp01(t / 1); // 값을 0에서 1로 제한
-            sprite.color = UnityEngine.Color.Lerp(sprite.color, target, t);
+            t += Time.deltaTime;
+            float clamp = Mathf.Clamp01(t / 1); // 값을 0에서 1로 제한
+            sprite.color = Color.Lerp(sprite.color, targetColor, clamp);
 
             yield return null;
         }
 
         // 캔버스 활성화
         if (canvas != null)
-            canvas.gameObject.SetActive(true);
-
-        StopAllCoroutines();
+        {
+            foreach (Canvas c in canvas)
+            {
+                c.gameObject.SetActive(true);
+            }
+        }
     }
 }
