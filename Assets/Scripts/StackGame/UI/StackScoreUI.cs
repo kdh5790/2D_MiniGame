@@ -46,6 +46,7 @@ public class StackScoreUI : StackBaseUI
         bestScoreText.text = bestScore.ToString();
         bestComboText.text = bestCombo.ToString();
 
+        // 미니게임 중 획득한 점수 골드에 추가
         GoldManager.instance.AddMiniGameGold(score);
     }
 

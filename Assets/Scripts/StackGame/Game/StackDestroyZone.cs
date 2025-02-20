@@ -6,6 +6,7 @@ public class StackDestroyZone : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
+        // ÆÄÆíÀÌ ´ê¾Ò´Ù¸é ÆÄ±«
         if(collision.gameObject.name.Equals("Rubble"))
         {
             Destroy(collision.gameObject);

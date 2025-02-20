@@ -18,6 +18,8 @@ public class StackUIManager : MonoBehaviour
     public static StackUIManager Instance { get { return instance; } }
 
     UIState currentState = UIState.Home;
+
+    // 현재 Scene에서 사용중인 UI 관련 클래스
     StackHomeUI homeUI = null;
     StackGameUI gameUI = null;
     StackScoreUI scoreUI = null;
@@ -29,6 +31,7 @@ public class StackUIManager : MonoBehaviour
         instance = this;
         theStack = FindObjectOfType<TheStack>();
 
+        // 현재 Scene에서 사용중인 UI 관련 클래스들 가져오기
         homeUI = GetComponentInChildren<StackHomeUI>(true);
         homeUI?.Init(this);
 
@@ -43,6 +46,7 @@ public class StackUIManager : MonoBehaviour
 
     public void ChangeState(UIState state)
     {
+        // 현재 상태에 따라 UI 활성화 및 비활성화
         currentState = state;
         homeUI?.SetActive(currentState);
         gameUI?.SetActive(currentState);
