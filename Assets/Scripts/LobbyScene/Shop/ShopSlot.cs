@@ -84,7 +84,7 @@ public class ShopSlot : MonoBehaviour
 
     private void Buy()
     {
-        if (GoldManager.instance.PlayerGold > characterInfo.price)
+        if (GoldManager.instance.PlayerGold >= characterInfo.price)
         {
             if (!PlayerDataManager.instance.unlockCharacters.Contains(slotCharacter))
             {

@@ -48,12 +48,12 @@ public class ObstaclesBackGround : MonoBehaviour
     {
         PlayerController player = FindObjectOfType<PlayerController>();
 
-        speed = 2f;
+        speed = 3f;
 
         while (!player.isDead)
         {
             yield return new WaitForSeconds(5.0f);
-            IncreaseSpeed(0.2f);
+            IncreaseSpeed(0.5f);
         }
     }
 
