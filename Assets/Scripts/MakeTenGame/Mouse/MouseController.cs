@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
-    [SerializeField] private GameObject dragPrefab;
-    private GameObject instantiateSquare;
+    [SerializeField] private GameObject dragPrefab; // 드래그 박스 프리팹
+    private GameObject instantiateSquare; // 생성한 드래그 박스
 
     private Vector3 startPos;
     private Vector3 nowPos;
@@ -32,16 +32,19 @@ public class MouseController : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
+                // 현재 선택된(드래그 영역에 들어온) 숫자들의 합이 10이라면
                 if (MakeTen.instance.sum == 10)
                 {
                     foreach (GameObject go in MakeTen.instance.selectedNumber.ToList())
                     {
+                        // 점수 추가, 리스트에서 삭제 후 오브젝트 파괴
                         MakeTen.instance.score++;
                         MakeTen.instance.selectedNumber.Remove(go);
                         Destroy(go);
                     }
                 }
 
+                // 드래그박스 파괴
                 Destroy(instantiateSquare);
                 MakeTen.instance.sum = 0;
             }
@@ -59,7 +62,7 @@ public class MouseController : MonoBehaviour
         startPos = Camera.main.ScreenToWorldPoint
             (new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
 
-        // 드래그 중인 영역을 나타낼 오브젝트 생성
+        // 드래그박스 생성
         instantiateSquare = Instantiate(dragPrefab, Vector3.zero, Quaternion.identity);
     }
 
