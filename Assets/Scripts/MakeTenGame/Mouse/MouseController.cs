@@ -40,7 +40,7 @@ public class MouseController : MonoBehaviour
                         // 점수 추가, 리스트에서 삭제 후 오브젝트 파괴
                         MakeTen.instance.score++;
                         MakeTen.instance.selectedNumber.Remove(go);
-                        Destroy(go);
+                        go.SetActive(false);
                     }
                 }
 
